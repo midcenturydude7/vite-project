@@ -1,8 +1,9 @@
 import React from "react";
+import largeLogo from "../img/react-icon-large.png";
 
 function Main() {
   return (
-    <div className="main-content__container">
+    <main className="main-content__container">
       <h1 className="main-content__title">Fun facts about React</h1>
       <ul className="main-content__list">
         <li className="main-content__list-item">Was first released in 2013</li>
@@ -11,7 +12,7 @@ function Main() {
         <li className="main-content__list-item">Is maintained by Facebook</li>
         <li className="main-content__list-item">Powers thousands of enterprise apps, including mobile apps</li>
       </ul>
-    </div>
+    </main>
   );
 }
 

@@ -11,7 +11,6 @@ html, body {
 div.main-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   height: 100vh;
   background: #282D35;
 }
@@ -23,11 +22,6 @@ nav.navbar-container {
   background: #21222A;
   padding: 1.75em 2em;
 }
-
-/* div.navbar-container-logo {
-  display: flex;
-  align-items: center;
-} */
 
 img.navbar-logo {
   width: 50px;
@@ -46,28 +40,39 @@ h2.navbar-subtitle {
 }
 
 /* ===  <MAIN /> COMPONENT  === */
-div.main-content__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+main.main-content__container {
   padding: 3.5em;
   color: #FFF;
+  background-image: url("../img/react-icon-large.png");
+  background-repeat: no-repeat;
+  background-position: right 95%;
 }
 
 h1.main-content__title {
   font-size: 2.5rem;
+  letter-spacing: -0.05em;
 }
 
 ul.main-content__list {
-  margin: 2em 0 0 2.75em;
-  line-height: 1.5;
-  list-style: none;
+  margin: 1em 0 0 2.75em;
+  line-height: .9;
+  /* list-style: none; */
+  max-width: 400px;
 }
 
-li.main-content__list-item::before {
+li.main-content__list-item {
+  padding-block: .75em;
+}
+
+li.main-content__list-item::marker {
+  color:#61DAFB;
+  font-size: 1.7rem;
+}
+
+/* li.main-content__list-item::before {
   content: "\2022";
   color: #61DAFB;
   display: inline-block;
-  width: 1.75em;
+  width: 1.25em;
   font-size: 1.75rem;
-}
+} */
