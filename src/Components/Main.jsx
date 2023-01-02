@@ -1,5 +1,4 @@
 import React from "react";
-import largeLogo from "../img/react-icon-large.png";
 
 function Main() {
   return (
